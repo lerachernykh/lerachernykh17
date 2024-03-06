@@ -3,9 +3,10 @@ a, b = 0, 0
 while b != 3:
     c1 = random.randint(1, 10)
     c2 = random.randint(1, 10)
-    print(c1, '+', c2, '=... ')
+    c3 = random.randint(1, 10)
+    print(c1, '+', c2, '+', c3, '=... ')
     d = int(input())
-    if c1 + c2 == d:
+    if c1 + c2 + c3 == d:
         a += 1
         print('правильно!')
     else:
