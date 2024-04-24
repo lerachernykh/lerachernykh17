@@ -10,22 +10,25 @@ print("изображение успешно обрезано и сохране�
 
 def main2():
     from PIL import Image
-    praz = {
-        "День рождения": "др.jpg",
+    praz = {"День рождения": "др.jpg",
         "Новый год": "нг.jpg",
         "8 марта": "жендень.jpg",
-        "День святого валентина": "вален.jpg"
-    }
+        "День святого валентина": "вален.jpg"}
     hol = input("к какому празднику хотите открытку?")
     try:
         holx = praz[hol]
         print(f"вот открытка к празднику {hol}:")
     except KeyError:
         print("к такому празднику открытки нет(")
+    holx_image = Image.open(holx)
+    holx_image.show()
 main2()
 
 def main3():
     from PIL import Image, ImageDraw, ImageFont
+    name = input("введите имя человека, которого хотите поздравить: ")
+    text = f"{name}, поздравляю!"
+
     image = Image.open("др2.jpg")
 
     width, height = image.size
@@ -38,8 +41,5 @@ def main3():
     draw.text(((width - text_width) // 2, height - 60 - text_height), text, font=font, fill="black")
 
     image.save("poz.png", "PNG")
-
-name = input("введите имя человека, которого хотите поздравить: ")
-text = f"{name}, поздравляю!"
-create_poz(name, text)
+    image.show()
 main3()
