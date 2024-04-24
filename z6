@@ -1,0 +1,34 @@
+def main1():
+    ss = {"россия": "москва", "япония": "токио", "корея": "сеул", "германия": "берлин", "франция": "париж"}
+    print(ss)
+    print(ss["корея"])
+    print(sorted(ss))
+main1()
+
+def main2():
+    o1 = set('авеинорст')
+    o2 = set('дклмпу')
+    o3 = set('бгёья')
+    o4 = set('йы')
+    o5 = set('жзхцч')
+    o8 = set('шэю')
+    o10 = set('фщъ')
+    s = input('введите слово: ')
+    o = 0
+    for i in s:
+        if i in o1:
+            o +=1
+        elif i in o2:
+            o +=2
+        elif i in o3:
+            o +=3
+        elif i in o4:
+            o +=4
+        elif i in o5:
+            o +=5
+        elif i in o8:
+            o +=8
+        elif i in o10:
+            o +=10
+    print('стоимость слова = ', o)
+main2()
