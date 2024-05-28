@@ -1,0 +1,42 @@
+{
+    "products": [
+        {
+            "name": "Шоколад",
+            "price": 50,
+            "available": true,
+            "weight": 100
+        },
+        {
+            "name": "Кофе",
+            "price": 100,
+            "available": false,
+            "weight": 250
+        },
+        {
+            "name": "Чай",
+            "price": 70,
+            "available": true,
+            "weight": 50
+        },
+        {
+            "name": "Сыр",
+            "price": "200",
+            "available": true
+        },
+        {
+            "name": "Молоко",
+            "price": "150",
+            "available": false
+        },
+        {
+            "name": "Добрая кола",
+            "price": "89",
+            "available": true
+        },
+        {
+            "name": "Пепси",
+            "price": "120",
+            "available": false
+        }
+    ]
+}
